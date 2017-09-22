@@ -12,16 +12,21 @@ public class Programa {
 
         NotasMusicais notas = new NotasMusicais();
 
+//        List<Nota> musica = Arrays.asList(
+//                notas.pega("do"),
+//                notas.pega("re"),
+//                notas.pega("mi"),
+//                notas.pega("fa"),
+//                notas.pega("fa"),
+//                notas.pega("fa"));
+
         List<Nota> musica = Arrays.asList(
-                notas.pega("do"),
-                notas.pega("re"),
-                notas.pega("mi"),
-                notas.pega("fa"),
-                notas.pega("fa"),
-                notas.pega("fa"));
+                notas.pega("resustenido"),
+                notas.pega("resustenido"),
+                notas.pega("dosustenido"),
+                notas.pega("dosustenido"));
 
         Piano piano = new Piano();
         piano.toca(musica);
-
     }
 }
